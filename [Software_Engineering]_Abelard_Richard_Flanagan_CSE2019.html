@@ -17,34 +17,151 @@
     </head>
     
     <body>
-        <h1>Software Engineering Final Exam Task</h1>
+        <div class="container">
+        <h1 class="text-center">Curriculum Vitae</h1>
         
+        <h2 class="text-center"><b>Welcome to my resume page! Get to know me better!</b></h2>
+
+        <h3 class="bg-primary" style="color:white">Photos</h3>
+        <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a>
+                  <img class="img-responsive" src="my-pict.png" style="width:100%">
+                  <div class="caption">
+                    <p>Me</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a>
+                  <img class="img-responsive" src="my-pict2.jpg" style="width:100%">
+                  <div class="caption">
+                    <p>Myself</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a>
+                  <img class="img-responsive" src="my-pict3.jpg" style="width:100%">
+                  <div class="caption">
+                    <p>and I</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+ 
+ 
+        <h3 class="bg-primary" style="color:white">Data</h3>
+
+        <p>
+            DoB: Jakarta, 1 July 2000
+            <br>
+            Gender: he/they
+            <br>
+            Address: BSD
+            <br>
+            Education:
+            <br><br>
+        </p>       
         <table id="table_id" class="display">
             <thead>
-                <tr>
-                    <th>Column 1</th>
-                    <th>Column 2</th>
+                <tr class="info">
+                    <th>Level</th>
+                    <th>Place</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Row 1 Data 1</td>
-                    <td>Row 1 Data 2</td>
+                    <td>Early Childhood Years</td>
+                    <td>Thumbeline Jr</td>
                 </tr>
                 <tr>
-                    <td>Row 2 Data 1</td>
-                    <td>Row 2 Data 2</td>
+                    <td>Elementary Years</td>
+                    <td>SDIT Annida</td>
+                </tr>
+                <tr>
+                    <td>Middle School</td>
+                    <td>SBBS Sragen</td>
+                </tr>   
+                <tr>
+                    <td>High School</td>
+                    <td>BINUS Bekasi</td>
+                </tr>
+                <tr>
+                    <td>University</td>
+                    <td>International University Liaison Indonesia</td>
                 </tr>
             </tbody>
         </table>
 
+        <p class="text-info"><b>
+            Project Experiences
+        </b>
+        </p>
+        <table id="table_id2" class="display">
+            <thead>
+                <tr class="info">
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web 2.0 Technova</td>
+                    <td>Our team of two revamped a website for an IT company using
+                        WordPress and a given theme, learning how to make a professional-looking
+                        site along the way.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Smoke Detector</td>
+                    <td>Using Raspberry Pi and MQ2 Smoke Sensor, we tried
+                        out some code in C to alert user whenever gas and or 
+                        smoke is detected by turning on a beeping sound, 
+                        lighting up an LED, and send warning message through Telegram.
+                    </td>
+                </tr>
+                <tr>
+                    <td>User Scheduler</td>
+                    <td>Using Laravel full-stack framework and FullCalendar libray,
+                        our team attempted to make a calendar system where users can 
+                        input and adjust their daily schedule so that other people
+                        see their activities.
+                    </td>
+                </tr>   
+                <tr>
+                    <td>Anime Recommender</td>
+                    <td>Our team utilized Python's Machine Learning ability to
+                        make a recommender system based on big data of anime list and infos, where
+                        user can just input a show or a genre and the system will
+                        suggest similar shows of they might like.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bluetooth Messaging</td>
+                    <td>Our team created a code so that two laptops can 
+                        chat to each other using Bluetooth through PyBluez library
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <!--must be put right b4 closing body tag-->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        </div>
     </body>
     <script>
         $(document).ready( function(){
             $('#table_id').DataTable();
+        });
+        $(document).ready( function(){
+            $('#table_id2').DataTable();
         });
     </script>
 </html>
